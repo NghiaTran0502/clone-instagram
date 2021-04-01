@@ -1,0 +1,191 @@
+$line: rgba(0, 0, 0, 0.3);
+
+
+
+.header {
+
+   &__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+
+
+      padding: 5px 20px;
+
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+
+      &--logo {
+         width: 130px;
+
+      }
+
+      &--message {
+         font-size: 1.5rem;
+         color: black;
+      }
+   }
+
+   &__line {
+      display: none;
+   }
+
+   &__search {
+      display: none;
+
+      input {
+         padding: 5px 10px;
+         border-radius: 5px;
+         border: 1px solid rgba(0, 0, 0, 0.3);
+         width: 200px;
+
+
+         &::-webkit-input-placeholder {
+            text-align: center;
+         }
+      }
+   }
+
+   &__navBar {
+      width: 100%;
+      padding: 10px 0;
+      border-top: 1px solid $line;
+      background-color: white;
+
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      bottom: 0;
+
+      display: flex;
+      justify-content: space-around;
+
+      font-size: 1.5rem;
+
+      a {
+         color: black;
+      }
+
+      &--message {
+         display: none;
+      }
+
+      &--compass {
+         display: none;
+      }
+
+   }
+}
+
+@media all and (min-width: 768px) {
+   .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      background: white;
+
+      border-bottom: 1px solid $line;
+
+      position: fixed;
+      top: 0;
+
+      &__main {
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+
+         margin: 0 auto;
+      }
+
+
+      &__top {
+         position: static;
+         background: none;
+
+         &--message {
+            display: none;
+         }
+
+      }
+
+      &__search {
+         display: block;
+      }
+
+      &__navBar {
+         width: auto;
+         position: static;
+         display: block;
+         background: none;
+         border: none;
+
+         font-size: 1.3rem;
+
+         &--message {
+            display: inline-block;
+         }
+
+         &--search {
+            display: none;
+         }
+
+         &--post {
+            display: none;
+         }
+
+         &--compass {
+            display: inline-block;
+         }
+
+         a {
+            padding: 0 10px;
+         }
+      }
+   }
+}
+
+@media all and (min-width: 1024px) {
+   .header {
+      width: 100%;
+
+
+      &__main {
+         width: 70%;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+
+         margin: 0 auto;
+      }
+
+      &__navBar {
+
+         &--message {
+            display: inline-block;
+         }
+
+         &--search {
+            display: none;
+         }
+
+         &--post {
+            display: none;
+         }
+
+         &--compass {
+            display: inline;
+         }
+
+         a {
+            padding: 0 10px;
+         }
+      }
+
+      background-color: white;
+   }
+}
