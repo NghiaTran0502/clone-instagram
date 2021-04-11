@@ -28,7 +28,7 @@ const Header = props => {
                <input type="text" name="search" id="search" placeholder="Search" />
             </div>
             <div className="header__navBar">
-               <Link to="#" className="header__navBar--home" >
+               <Link to="/" className="header__navBar--home" >
                   <FontAwesomeIcon icon={faHome} />
                </Link>
                <Link to='#' className="header__navBar--message">
@@ -37,7 +37,7 @@ const Header = props => {
                <Link to="#" className="header__navBar--search" >
                   <FontAwesomeIcon icon={faSearch} />
                </Link>
-               <Link to="#" className="header__navBar--compass" >
+               <Link to="/explore" className="header__navBar--compass" >
                   <FontAwesomeIcon icon={faCompass} />
                </Link>
                <Link to="#" className="header__navBar--post" >

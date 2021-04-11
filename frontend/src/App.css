@@ -1,18 +1,21 @@
 .test {
-  margin-top: 50px;
+  margin-top: 70px;
   margin-bottom: 50px;
 }
 
 @media all and (min-width: 768px) {
   .test {
     max-width: 100%;
-    margin: 50px auto;
+    margin: 70px auto;
+    padding: 0 10px;
   }
 }
 
 @media all and (min-width: 1024px) {
   .test {
     max-width: 70%;
-    margin: 50px auto;
+    margin: 70px auto;
+    padding: 0 10px;
+
   }
 }

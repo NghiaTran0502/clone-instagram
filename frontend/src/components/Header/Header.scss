@@ -4,11 +4,13 @@ $line: rgba(0, 0, 0, 0.3);
 
 .header {
 
+
    &__top {
       display: flex;
       justify-content: space-between;
       align-items: center;
       background-color: white;
+      z-index: 99999;
 
 
       padding: 5px 20px;
@@ -40,12 +42,17 @@ $line: rgba(0, 0, 0, 0.3);
          padding: 5px 10px;
          border-radius: 5px;
          border: 1px solid rgba(0, 0, 0, 0.3);
-         width: 200px;
+         width: 300px;
 
 
          &::-webkit-input-placeholder {
             text-align: center;
          }
+
+         &:focus {
+            outline: none;
+         }
+
       }
    }
 
@@ -59,6 +66,8 @@ $line: rgba(0, 0, 0, 0.3);
       bottom: 0;
       left: 0;
       bottom: 0;
+      z-index: 99999;
+
 
       display: flex;
       justify-content: space-around;
@@ -67,6 +76,10 @@ $line: rgba(0, 0, 0, 0.3);
 
       a {
          color: black;
+
+         &:hover {
+            color: black;
+         }
       }
 
       &--message {
@@ -76,7 +89,6 @@ $line: rgba(0, 0, 0, 0.3);
       &--compass {
          display: none;
       }
-
    }
 }
 
@@ -92,6 +104,8 @@ $line: rgba(0, 0, 0, 0.3);
 
       position: fixed;
       top: 0;
+      z-index: 99999;
+
 
       &__main {
          width: 100%;
@@ -152,6 +166,8 @@ $line: rgba(0, 0, 0, 0.3);
 @media all and (min-width: 1024px) {
    .header {
       width: 100%;
+      z-index: 99999;
+
 
 
       &__main {

@@ -1,0 +1,15 @@
+.explore {
+
+   &__item {
+      padding: 0px 5px !important;
+   }
+}
+
+@media all and (max-width: 768px) {
+   .explore {
+
+      &__item {
+         padding: 0px 2px !important;
+      }
+   }
+}
